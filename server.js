@@ -27,8 +27,8 @@ app.use(express.static("public"));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./Develop/routes/apiRoutes")(app);
+require("./Develop/routes/htmlRoutes")(app);
 
 app.listen(PORT, function() {
   console.log("Note taker is listening on PORT: " + PORT);
